@@ -119,7 +119,10 @@ html {
        margin-bottom: 1em;
    }
 
-   input {
+   input,
+   textarea,
+   select,
+   button {
     transition: outline .2s ease-out .1s;
    }
 
