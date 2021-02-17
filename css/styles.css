@@ -26,9 +26,10 @@ html {
    }
 
    body {
-    color: #848688;
+    color: #393A3C;
     line-height: 1.5;
     font-family: 'Merriweather', serif;
+    background-color: #F0F2F5;
 
    }
 
@@ -127,15 +128,22 @@ html {
    input[type="tel"],
    select,
    textarea {
-    background-color:#eff0f1;
+    background-color:#DFDCCE;
     border:none;
     width: 100%;
     padding: 15px;
     border-radius: 4px;
-    outline: none;
     margin: 0 0 1em 0;
     height: auto;
    }
+
+   input:focus,
+   select:focus,
+   textarea:focus,
+   button:focus {
+       outline: 3px solid #BA4F54;
+   }
+
 
 
 
@@ -162,7 +170,7 @@ html {
 .radio-set legend{
     font-weight: normal;
     font-size: 1em;
-    color:#848688;
+    color:#393A3C;
     margin-bottom: 1em;
 }
 
@@ -217,5 +225,42 @@ button {
     color: #fff;
 }
 
+     /*Media Queries
+     ========================================================================== */
+  
+  /**
+   * .
+   */
 
+   /* Tablets */
+
+   @media(min-width: 768px){
+       .main-form,
+       .sign-up {
+           width: 85%;
+           max-width: 600px;
+           margin-left:  auto;
+           margin-right: auto;
+       }
+   }
+
+   /* Desktop */ 
+
+   @media(min-width: 1024px){
+     
+    .contact input,
+    .contact label {
+        display: inline-block;
+    }
+
+    .contact input,
+    .contact select {
+        width: 64%;
+    }
+
+    .contact label {
+        width: 35%;
+    }
+
+   }
 
