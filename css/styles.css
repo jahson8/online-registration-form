@@ -238,7 +238,7 @@ button {
        .main-form,
        .sign-up {
            width: 85%;
-           max-width: 600px;
+           max-width: 800px;
            margin-left:  auto;
            margin-right: auto;
        }
@@ -255,11 +255,15 @@ button {
 
     .contact input,
     .contact select {
-        width: 64%;
+        width: 79%;
     }
 
     .contact label {
-        width: 35%;
+        width: 20%;
+    }
+
+    #zip {
+        width: 20%;
     }
 
    }
